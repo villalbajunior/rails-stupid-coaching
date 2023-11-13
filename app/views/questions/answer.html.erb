@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Stupid Coaching</h1>
+  <div class="border-start border-dark-subtle border-5">
+  <p class="ps-3"> <%= params[:answer] %> </p>
+  <p class="ps-3">- You</p>
+  </div>
+  <div class="border-start border-dark-subtle border-5 bg-warning">
+  <p class="ps-3"> <Strong><%= @answer %></strong> </p>
+  <p class="ps-3">- Your coach</p>
+  </div>
+  <p> <%= link_to "Ask a new question", ask_path %> </p>
+</body>
+</html>
